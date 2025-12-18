@@ -30,8 +30,12 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 
 
 Скриншот 1: результат SELECT User, Host FROM mysql.user;
+![alt text](https://github.com/lyalov/DDL-DML/blob/main/show%20users.png)
 Скриншот 2: результат SHOW GRANTS FOR 'sys_temp'@'%';
+![alt text](https://github.com/lyalov/DDL-DML/blob/main/show%20grants%20sys_temp.png)
 Скриншот 3: результат SHOW TABLES; из базы sakila
+![alt text](https://github.com/lyalov/DDL-DML/blob/main/USE%20sakila.png)
+
 
 ```bash
 CREATE USER 'sys_temp'@'%' IDENTIFIED BY 'password';
@@ -42,4 +46,5 @@ SHOW GRANTS FOR 'sys_temp'@'%';
 ALTER USER 'sys_temp'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
 USE sakila;
 SHOW TABLES;
+
 ```
